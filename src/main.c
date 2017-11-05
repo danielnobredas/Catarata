@@ -42,7 +42,7 @@ int main(int argc, char **argv){
 				break;
 			default:
 				fprintf(stderr, "%s\n","Parametros invalidos. Digite -h ou --help para obter ajuda.");
-				exit(0);
+				return 1;
 		}	
 	printf("%s\n",*nomeImg);
 	return 0;
