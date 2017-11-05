@@ -1,7 +1,7 @@
-PROG = Catarata
+PROG = catarata
 CC = gcc
 CFLAGS = -Wall -ansi -pedantic -std=c11
-OBJS = main.o ppm.o BMP.o bits.o
+OBJS = main.o
 
 $(PROG): $(OBJS)
 	$(CC) -o $(PROG) $(OBJS)
