@@ -10,7 +10,7 @@ int main(int argc, char **argv){
 	//Variaveis do GETOPT adatado de: http://mindbending.org/pt/argumentos-e-parametros-em-c
 	short imagem = 0, formato = 0, diagnostico=0;
 	char optc = 0;
-
+	optc = imagem+formato+diagnostico;
 	//Para os parametros longos
 	struct option Longas[] = {
 		{"imagem", required_argument, NULL, 'i'},
@@ -60,6 +60,8 @@ int main(int argc, char **argv){
 	output = fopen(diagImg,"w+");
 	
 	
+	lerPPM(img);
+
 	return 0;
 }
 

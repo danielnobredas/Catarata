@@ -18,4 +18,6 @@ typedef struct tagPPMImage{
 	PPMPixel pixel;
 }PPMImage;
 
+void lerPPM(FILE *imagem);
+
 #endif
