@@ -30,7 +30,7 @@ int main(int argc, char **argv){
 	while ((optc = getopt_long(argc,argv, "i:o:f:h", Longas, NULL)) != -1)
 		switch (optc){
 			case 'h': //Help
-				printf("\v%s\v\n\t%s %50s\n\t%s %78s\n\t%s %59s\v\n","Uso padrao: ./catarata -i imagem.ppm -f ppm -o texto.txt","-i|--imagem","Nome do arquivo de imagem.","-f|--formato","Formato do arquivo de imagem.(Formatos suportados: PPM)","-o|--diagnostico","Nome do arquivo de texto de diagnostico.");
+				printf("\v%s\v\n\t%s %39s\n\t%s %67s\n\t%s %48s\v\n","Uso padrao: ./catarata -i imagem.ppm -f ppm -o texto.txt","-i|--imagem","Nome do arquivo de imagem.","-f|--formato","Formato do arquivo de imagem.(PPM)","-o|--diagnostico","Nome do arquivo de texto de diagnostico.");
 				return 1;
 				break;
 			case 'i'://Nome da imagem
