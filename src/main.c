@@ -22,7 +22,7 @@ int main(int argc, char **argv){
 
 	//Caso nao exista argumentos
 	if(argc == 1){
-		printf("Parametros faltando. Digite -h ou --help para obter ajuda.\n");
+		fprintf(stderr,"Parametros faltando. Digite -h ou --help para obter ajuda.\n");
 		exit(0);
 	}
 
@@ -39,7 +39,7 @@ int main(int argc, char **argv){
 			case 'f'://formato da imagem
 				formImg = optarg;
 				if (strncmp(formImg,"ppm",3)!=0){ 
-					printf("Arquivo de imagem invalido ou nao suportado. Digite -h ou --help para obter ajuda.\n");
+					fprintf(stderr,"Arquivo de imagem invalido ou nao suportado. Digite -h ou --help para obter ajuda.\n");
 					return 1;
 				}
 				break;
@@ -62,6 +62,7 @@ int main(int argc, char **argv){
 	
 	lerPPM(img);
 	fclose(img);
+	fclose(output);
 	return 0;
 }
 
