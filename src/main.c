@@ -61,7 +61,7 @@ int main(int argc, char **argv){
 	
 	
 	lerPPM(img);
-
+	fclose(img);
 	return 0;
 }
 
