@@ -20,4 +20,6 @@ typedef struct tagPPMImage{
 
 void lerPPM(FILE *imagem);
 
+void salvarImage(PPMImage **imagem,char cod[3],int lin,int col,int intens);
+
 #endif
