@@ -19,3 +19,12 @@ void salvarImage(PPMImage **imagem,char cod[3],int lin,int col,int intens){
 	}
 	fclose(saida);
 }
+
+void convolucao(PPMImage **imagem,char cod[3],int lin,int col,int intens){
+	FILE *gaussiano=fopen("gaussiano.ppm","w+");
+	for(i = 0; i<lin; i++){
+		for(j = 0; j<col; j++){
+			
+		}
+	}
+}
