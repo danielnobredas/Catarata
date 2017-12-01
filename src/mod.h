@@ -13,16 +13,15 @@ typedef struct tagPPMPixel{
 	int R,G,B;
 }PPMPixel;
 
-typedef struct tagPPMImage{
-	int data;
-	PPMPixel pixel;
-}PPMImage;
+void escrever(PPMPixel **imagem,char nome[80],int lin,int col);
 
 void lerPPM(FILE *imagem);
 
-void salvarImage(PPMImage **imagem,char cod[3],int lin,int col,int intens);
+void pretoBranco(PPMPixel **imagem,char cod[3],int lin,int col,int intens);
 
-void convolucao(PPMImage **imagem,char cod[3],int lin,int col,int intens);
+void convolucao(PPMPixel **imagem,int alt,int larg,int lin,int col,int kernel[][col],int intens);
+
+void gaussiano(PPMPixel** imagem,int lin, int col);
 
 
 #endif
