@@ -9,9 +9,11 @@
 -Parametros necessários para a execução da imagem incluindo o --help
 -Imagem com saída em preto e branco
 -Arquivo makefile
+-Convolucao
+-Filtro gaussiano
 
 # O que não foi feito
--Aplicação do filtro Blur e Threshold
+-Aplicação do filtro Threshold
 -A separação da iris através da binarização
 -Diagnóstico de catarata baseado na porcentagem Threshold da pupila
 
